@@ -1,4 +1,5 @@
 from torch.utils.data import Dataset
+import numpy as np
 from PIL import Image
 import os
 class MyData(Dataset):
@@ -25,6 +26,7 @@ bees_label_dir = "bees"
 ants_dataset = MyData(root_dir,ants_label_dir)
 bees_dataset = MyData(root_dir,bees_label_dir)
 img, label = ants_dataset[0]
+
 
 
 
